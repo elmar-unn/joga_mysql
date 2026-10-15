@@ -1,0 +1,16 @@
+<h1>{{author.name}}</h1>
+
+<div class="article-list">
+    {{#each articles}}
+        <article>
+            <a href="/article/{{slug}}">
+                <img src="/images/{{image}}" alt="">
+            </a>
+            <h2>
+                <a href="/article/{{slug}}">{{name}}</a>
+            </h2>
+        </article>
+    {{else}}
+        <p>Sellel autoril pole artikleid.</p>
+    {{/each}}
+</div>
